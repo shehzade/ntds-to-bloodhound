@@ -1,0 +1,44 @@
+# Binaries and build artifacts
+bin/
+dist/
+ntds-to-bloodhound
+ntds-to-bloodhound-*
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test outputs and BloodHound JSON/ZIP files
+output/
+output-*/
+BloodHound_*.zip
+*.json.gz
+
+# Sensitive Active Directory databases and hives (CRITICAL)
+*.dit
+*.DIT
+ntds.dit
+SYSTEM
+SYSTEM.*
+SAM
+SECURITY
+*.hiv
+*.hive
+
+# Ground truth & dumped credentials
+ground-truth.txt
+expected_hashes.txt
+*.hashes
+*.ntds
+*.secrets
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+hashes.txt
+test-run/
+*.log
+*.json
